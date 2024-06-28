@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Success Gateway</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+    .active{
+        color:var(--primary) ;
+    }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+        .bg-dark-footer{
+            background-color: #0620cc ;
+        }
+        </style>
+
+</head>
+
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"> <i><img src="https://i.ibb.co/NSdwGrK/Picsart-24-05-09-15-52-02-522.png" height="60" ></i>Success Gateway</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active" >Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <!--<a href="404.html" class="dropdown-item">404 Page</a>-->
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link"></a>
+            </div>
+            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <body>
+
+    <!-- Carousel Start -->
+    
+        <div class="slideshow-container">
+    
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="img/poster 1.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="img/classroom.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img/smartboard.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 4000); // Change image every 2 seconds
+            }
+            </script>
+            
+            
+    
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Skilled Teachers</h5>
+                            <p>Unlock your potential with our expert educators guiding you every step of the way</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-chalkboard text-primary mb-4"></i>
+                            <h5 class="mb-3">Digital Classes</h5>
+                            <p>Experience the brilliance of learning in digital class, where every lesson comes before you </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-check text-primary mb-4"></i>
+                            <h5 class="mb-3">Continue Test</h5>
+                            <p>Stay ahead of the curve with regular tests to track your progress and refine your skills</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Library</h5>
+                            <p>Discover a tranquil haven for focused study,where the only sound is the turning pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/handwill.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to Success Gateway</h1>
+                    <p class="mb-4">Welcome to Success Gateway, your premier coaching institute offering comprehensive education from Nursery to Class 12. Specializing in Science Stream,
+                         we provide expert guidance for both PCM (Physics, Chemistry, Maths) and PCB (Physics, Chemistry, Biology). Our highly qualified teachers employ innovative teaching 
+                         methods using Smart Boards, ensuring an engaging learning experience. Students benefit from Smart Classes and access to Doubt
+                         Classes, fostering a supportive environment for academic success. Join us at Success Gateway and embark on your journey towards excellence.</p>
+                    <p class="mb-4">What you will get here</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Classes: From Nc. to  XII<sup>th</sup</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Teachers</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Smart Board</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Computer Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Fully Air Condition Classroom</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Personal Guidence</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
+                <h1 class="mb-5">Computer Courses</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/adcalogo.jpeg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">ADCA</h5>
+                                    <small class="text-primary">12 month</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/dcalogo.webp" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">DCA</h5>
+                                    <small class="text-primary">6 month</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/typinglogo.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Typing</h5>
+                                    <small class="text-primary">3 month</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/tallylogo2.jpg" alt="" style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+                            <h5 class="m-0">Tally</h5>
+                            <small class="text-primary">3 month</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories Start -->
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Classes</h6>
+                <h1 class="mb-5">About Classes</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/nc-8.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="about.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="contact.html" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0"></h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-4">Nc. to Class 8<sup>th</sup></h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i> From 5:00 pm</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.30 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>40 Students</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/classroom.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="about.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="contact.html" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0"></h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-4"> Class 9<sup>th</sup> & Class 10<sup>th</sup></h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>5:00 pm-7:00 pm</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>2.00 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>40 Students</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/smartboard.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="about.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="contact.html" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0"></h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-4">Class 11<sup>th</sup> & 12<Sup>th</Sup></h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>8:00 am-11:00 am</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>3:00 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>40 Students</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
+                <h1 class="mb-5">Expert Instructors</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Students Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="data:image/png;base64,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
+                    lGMfq9k4TkdzemYrjUMoozK5nf3A3+SW86W25OBzXl8/vLCsGW86Zbb4/L+vjYbFk8wm07kD4YP0Rzl9/hPPXH+H89R80Qp8b2OTrDgAAAABJRU5ErkJggg==" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Viwan Raj</h5>
+                    <p>student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">The teachers are highly qualified and dedicated to helping students excel in their academic pursuits.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
+                    ANd9GcRQ0GkdEyXqJk1WCescWLAn9GUhPyJTJaR6Sw&s" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Priyanshu</h5>
+                    <p> student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Success Gateway is best institute for studies. And all facilities are available.
+                        They teach students very kindly and peacefully.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="data:image/png;base64,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
+                    9zsT8PR3/w7hef/fl3+2m8LO52Kaw7EFasP8Lm64+w+fojbL7+A5NBx2qc42zuAAAAAElFTkSuQmCC" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Rohit</h5>
+                    <p>student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Best place for study . All facilities are available which is required for study . Teachers are very good and  they teach children very well and peacefully.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="data:image/png;base64,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
+                    haBrR0Xn41LuaXXr8fx1f/iMbj6bQyq508BaFdpf8u9wm0/wE1OKcu+aGD0wAAAABJRU5ErkJggg==" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Gitanjali</h5>
+                    <p>student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">This is the best institute of patan. Smart class facilities are provided in this coaching.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
+                <h1 class="mb-5">Contact For Any Query</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5>Get In Touch</h5>
+                    <!--<p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                            <i class="fa fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary">Office</h5>
+                            <p class="mb-0">Jagdish Marg, Jakariyapur,Pahari,Patna,800007</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary">Mobile</h5>
+                            <p class="mb-0">+91 9097359726</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                            <i class="fa fa-envelope-open text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary">Email</h5>
+                            <p class="mb-0">prakashkumar.pk718@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14394.758137791518!2d85.1884362!3d25.5819939!3m2!1i1024!2i768!4f13.
+                    1!3m3!1m2!1s0x39f2a75d014ff30b%3A0x98a1907544de89ee!2sSuccess%20Gateway%20Library%20services%20and%20coaching%20institute!5e0!3m2!1sen!2sin!4v1715489506312!5m2!1sen!2sin" 
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <!--<form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form> -->
+                    <form action="https://api.web3forms.com/submit" method="POST">
+  
+                        <div ><input type="hidden" name="access_key" value="9cbe1c75-9c67-4953-95a2-45c5994bfdad">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                             
+                             <br>
+                             <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+                             <br>
+                             <input type="text" name="number" class="form-control" id="number" placeholder="Your Contact Number">
+                             <br>
+                
+                         
+                             <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+                             <br>
+                             <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                            
+                         
+                         <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                     </div>
+                 
+               </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+     <style>
+        .whatsapp_float {
+            position: fixed;
+            bottom: 100px;
+            right: 40px;
+        }
+     </style>
+     <div class="whatsapp_float"><a href="https://wa.me/919097359726" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png" width="50" class="whatsapp_float_btn"></a></div>
+    <!-- Testimonial End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark-footer text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jagdish Marg, Jakariyapur,Pahari,Patna,800007</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9097359726</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>prakashkumar.pk718@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <a href="gallary.html"><img class="img-fluid bg-light p-1" src="img/smartboard.jpg" alt=""></a>
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/classroom.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/hanwill.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <a href="gallary.html"> <img class="img-fluid bg-light p-1" src="img/smartboard2.jpg" alt=""> </a>
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/bag2.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/library.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Success Gateway</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                      <!-- <br><br> Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+
+  </script>
+</html>
